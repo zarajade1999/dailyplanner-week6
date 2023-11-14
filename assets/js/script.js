@@ -26,6 +26,7 @@ $(document).ready(function () {
       var time = $(this).parent().attr("id");
       localStorage.setItem(time, value);
     })
+    $("#hour-8 .description").val(localStorage.getItem("hour-8"));
     $("#hour-9 .description").val(localStorage.getItem("hour-9"));
     $("#hour-10 .description").val(localStorage.getItem("hour-10"));
     $("#hour-11 .description").val(localStorage.getItem("hour-11"));
